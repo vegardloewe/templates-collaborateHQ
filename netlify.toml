@@ -3,3 +3,6 @@
   command = "CI= npm run build"
 [build.environment]
   YARN_VERSION = "1.7.0"
+[template.environment]
+  CI = "npm run build"
+  NODE_VERSION = "14.14.0"
