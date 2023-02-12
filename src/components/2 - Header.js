@@ -16,11 +16,12 @@ export default () => {
         <div class="form-block hero w-form">
           <form
             data-name="Join List Form"
-            name="wf-form-Join-List-Form"
+            name="Join-List-Form"
             id="email-form"
-            method="get"
+            method="post"
             class="form"
             aria-label="Join List Form"
+            data-netlify="true"
           >
             <input
               type="text"
@@ -40,7 +41,7 @@ export default () => {
               data-name="Email"
               placeholder="Your Email"
               id="field"
-              required=""
+              required="true"
             />
             <input
               type="submit"
