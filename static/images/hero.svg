@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1731" height="905" viewBox="0 0 1731 905">
+  <defs>
+    <filter id="Rectangle_2" x="0" y="355" width="689" height="550" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3" x="1042" y="178" width="689" height="550" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur-2"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Component_1_1" data-name="Component 1 – 1" transform="translate(75)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1281" height="781" rx="15" transform="translate(162)" fill="#273350"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="1067" height="130" rx="15" transform="translate(269 66)" fill="#2e3c5a"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="1067" height="130" rx="15" transform="translate(269 236)" fill="#2e3c5a"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="1067" height="130" rx="15" transform="translate(269 406)" fill="#2e3c5a"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="1067" height="130" rx="15" transform="translate(269 576)" fill="#2e3c5a"/>
+    <g transform="matrix(1, 0, 0, 1, -75, 0)" filter="url(#Rectangle_2)">
+      <rect id="Rectangle_2-2" data-name="Rectangle 2" width="539" height="400" rx="15" transform="translate(75 427)" fill="#273350"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -75, 0)" filter="url(#Rectangle_3)">
+      <rect id="Rectangle_3-2" data-name="Rectangle 3" width="539" height="400" rx="15" transform="translate(1117 250)" fill="#273350"/>
+    </g>
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="441" height="230" rx="15" transform="translate(1091 287)" fill="#303c58"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="455" height="62" rx="15" transform="translate(42 474)" fill="#2e3c5a"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="455" height="62" rx="15" transform="translate(42 576)" fill="#2e3c5a"/>
+  </g>
+</svg>
