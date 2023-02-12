@@ -7,6 +7,8 @@
   CollaborateHQ Template
 </h1>
 
+<img width="1436" alt="Skjermbilde 2023-02-12 kl  16 56 06" src="https://user-images.githubusercontent.com/62800747/218326078-ba506669-5689-45d1-98a9-78c5f27eb227.png">
+
 Kick off your project with this boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
