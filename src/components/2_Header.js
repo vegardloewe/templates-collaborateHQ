@@ -18,7 +18,7 @@ const Header = () => {
       .catch((error) => alert(error))
   }
 
-  document.querySelector('form').addEventListener('submit', handleSubmit)
+  document.querySelector('form')?.addEventListener('submit', handleSubmit)
 
   return (
     <div class="section l4 wf-section">
