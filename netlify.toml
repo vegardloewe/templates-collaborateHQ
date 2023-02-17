@@ -3,3 +3,6 @@
   command = "CI= npm run build"
 [build.environment]
   YARN_VERSION = "1.7.0"
+[template.environment]
+  NODE_VERSION = "18"
+  NPM_FLAGS = "--legacy-peer-deps"
