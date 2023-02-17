@@ -2,8 +2,10 @@ const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
   siteMetadata: {
-    title: 'CollaborateHQ',
-    siteUrl: 'https://www.collaboratehq.com'
+    title: `CollaborateHQ`,
+    description: `A project management tool that helps teams collaborate, track progress, and meet deadlines`,
+    image: `/images/seo.png`,
+    siteUrl: `https://preview-collaboratehq.netlify.app`
   },
   plugins: [
     'gatsby-plugin-react-helmet',
