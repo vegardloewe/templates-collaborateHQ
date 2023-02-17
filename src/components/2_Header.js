@@ -22,7 +22,7 @@ const Header = () => {
     if (typeof document !== `undefined`) {
       document.querySelector('form')?.addEventListener('submit', handleSubmit)
     }
-  }, [document])
+  }, [])
 
   return (
     <div class="section l4 wf-section">
