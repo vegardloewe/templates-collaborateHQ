@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Header = () => {
   const [success, setSuccess] = useState(false)
@@ -18,7 +18,11 @@ const Header = () => {
       .catch((error) => alert(error))
   }
 
-  document.querySelector('form')?.addEventListener('submit', handleSubmit)
+  useEffect(() => {
+    if (typeof document !== `undefined`) {
+      document.querySelector('form')?.addEventListener('submit', handleSubmit)
+    }
+  }, [document])
 
   return (
     <div class="section l4 wf-section">
