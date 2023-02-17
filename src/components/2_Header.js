@@ -67,6 +67,7 @@ const Header = () => {
                 id="field"
                 required="true"
               />
+              <input type="hidden" name="form-name" value="Join-List-Form" />
               <input
                 type="submit"
                 value="Join List"
