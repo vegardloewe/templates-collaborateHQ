@@ -5,7 +5,7 @@ module.exports = {
     title: `CollaborateHQ`,
     description: `A project management tool that helps teams collaborate, track progress, and meet deadlines`,
     image: `/images/seo.png`,
-    siteUrl: `https://preview-collaboratehq.netlify.app`
+    siteUrl: `https://pageitup-chq.netlify.app`
   },
   plugins: [
     'gatsby-plugin-react-helmet',

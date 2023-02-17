@@ -9,7 +9,7 @@ import How from '../components/6_How'
 import Clients from '../components/7_Clients'
 import Cta from '../components/8_Cta'
 import Footer from '../components/9_Footer'
-import { SEO } from '../components/seo'
+import { SEO } from '../components/SEO'
 
 const LandingPage = () => {
   return (
