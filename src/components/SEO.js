@@ -17,7 +17,7 @@ export const SEO = ({ title, description, pathname, children }) => {
   const seo = {
     title: data.site.siteMetadata.title || defaultTitle,
     description: data.site.siteMetadata.description || defaultDescription,
-    image: `${data.site.siteMetadata.siteUrl}${image}`,
+    image: `${data.site.siteMetadata.siteUrl}${data.site.siteMetadata.image}`,
     url: `${data.site.siteMetadata.siteUrl}${pathname || ``}`
   }
 
