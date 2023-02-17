@@ -25,13 +25,12 @@ exports.createPages = ({ actions, graphql }) => {
     const contentTypes = _.groupBy(mdFiles, 'node.fields.contentType')
 
     createPage({
-      // page slug set in md frontmatter
       path: '/',
       component: path.resolve(`src/pages/LandingPage.js`)
-      // additional data can be passed via context
-      // context: {
-      //   id
-      // }
+    })
+    createPage({
+      path: '/success',
+      component: path.resolve(`src/pages/success.js`)
     })
   })
 }

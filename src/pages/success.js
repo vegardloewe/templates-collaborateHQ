@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styling/style.css'
 import { Link } from 'gatsby'
 
 const Success = () => (
