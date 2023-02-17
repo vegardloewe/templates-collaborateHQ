@@ -1,6 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Header = () => {
+  const [success, setSuccess] = useState(false)
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+
+    const myForm = event.target
+    const formData = new FormData(myForm)
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString()
+    })
+      .then(() => setSuccess(true))
+      .catch((error) => alert(error))
+  }
+
+  document.querySelector('form').addEventListener('submit', handleSubmit)
+
   return (
     <div class="section l4 wf-section">
       <div class="container">
@@ -14,43 +33,48 @@ const Header = () => {
           </p>
         </div>
         <div class="form-block hero w-form">
-          <form
-            data-name="Join List Form"
-            name="Join-List-Form"
-            id="email-form"
-            method="post"
-            class="form"
-            aria-label="Join List Form"
-            data-netlify="true"
-            action="/success"
-          >
-            <input
-              type="text"
-              class="text-field first w-input"
-              maxlength="256"
-              name="Name"
-              data-name="Name"
-              placeholder="Your Name"
-              id="field"
-              required=""
-            />
-            <input
-              type="email"
-              class="text-field w-input"
-              maxlength="256"
-              name="Email"
-              data-name="Email"
-              placeholder="Your Email"
-              id="field"
-              required="true"
-            />
-            <input
-              type="submit"
-              value="Join List"
-              data-wait="...."
-              class="form-button l4 w-button"
-            />
-          </form>
+          {!success ? (
+            <form
+              data-name="Join List Form"
+              name="Join-List-Form"
+              id="email-form"
+              method="post"
+              class="form"
+              aria-label="Join List Form"
+              data-netlify="true"
+            >
+              <input
+                type="text"
+                class="text-field first w-input"
+                maxlength="256"
+                name="Name"
+                data-name="Name"
+                placeholder="Your Name"
+                id="field"
+                required=""
+              />
+              <input
+                type="email"
+                class="text-field w-input"
+                maxlength="256"
+                name="Email"
+                data-name="Email"
+                placeholder="Your Email"
+                id="field"
+                required="true"
+              />
+              <input
+                type="submit"
+                value="Join List"
+                data-wait="...."
+                class="form-button l4 w-button"
+              />
+            </form>
+          ) : (
+            <p style={{ textAlign: 'center', color: '#4B7BFD' }}>
+              Thank you for your interest! The submission is received.
+            </p>
+          )}
         </div>
         <img
           src="/images/hero.svg"
