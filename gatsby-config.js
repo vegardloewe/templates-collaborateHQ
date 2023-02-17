@@ -18,8 +18,8 @@ module.exports = {
         theme_color: '#00C2BD',
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: 'standalone'
-        // icon: `${__dirname}/static/images/icon.png` // This path is relative to the root of the site.
+        display: 'standalone',
+        icon: `${__dirname}/static/images/logo.png` // This path is relative to the root of the site.
       }
     },
 
@@ -29,13 +29,6 @@ module.exports = {
       options: {
         path: `${__dirname}/static/images`,
         name: 'images'
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/templates`,
-        name: 'pages'
       }
     },
 
@@ -80,6 +73,21 @@ module.exports = {
             browsers: '> 0.5%, last 2 versions, ie 11'
           })
         ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: true, // Enable while using `gatsby develop`
+        // tailwind: true, // Enable tailwindcss support
+        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
+        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+        purgeCSSOptions: {
+          // https://purgecss.com/configuration.html#options
+          // safelist: ['safelist'], // Don't remove this selector
+        }
+        // More options defined here https://purgecss.com/configuration.html#options
       }
     },
     {

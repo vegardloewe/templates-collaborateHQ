@@ -1,27 +1,11 @@
-import React, { Fragment } from 'react'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import Meta from './Meta'
+import React from 'react'
 
-export default () => {
+const Nav = () => {
   return (
-    <div
-      data-collapse="medium"
-      data-animation="default"
-      data-duration="400"
-      id="Navigation-Bar"
-      data-easing="ease"
-      data-easing2="ease"
-      role="banner"
-      class="navigation l4 w-nav"
-    >
+    <div class="navigation l4 w-nav">
       <div class="nav-container">
         <div class="menu-left">
-          <a
-            href="https://www.google.com/"
-            class="brand w-nav-brand"
-            aria-label="home"
-          >
+          <a href="/" class="brand w-nav-brand" aria-label="home">
             <img
               src="/images/logo.svg"
               loading="lazy"
@@ -34,3 +18,5 @@ export default () => {
     </div>
   )
 }
+
+export default Nav

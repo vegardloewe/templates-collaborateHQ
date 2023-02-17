@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-export default () => {
+const Header = () => {
   return (
     <div class="section l4 wf-section">
       <div class="container">
@@ -22,6 +22,7 @@ export default () => {
             class="form"
             aria-label="Join List Form"
             data-netlify="true"
+            action="/success"
           >
             <input
               type="text"
@@ -50,22 +51,6 @@ export default () => {
               class="form-button l4 w-button"
             />
           </form>
-          <div
-            class="success-message hero w-form-done"
-            tabindex="-1"
-            role="region"
-            aria-label="Join List Form success"
-          >
-            <div class="text-block">Thank you!</div>
-          </div>
-          <div
-            class="error-message w-form-fail"
-            tabindex="-1"
-            role="region"
-            aria-label="Join List Form failure"
-          >
-            <div class="text-block">Oops! Something went wrong!</div>
-          </div>
         </div>
         <img
           src="/images/hero.svg"
@@ -78,3 +63,5 @@ export default () => {
     </div>
   )
 }
+
+export default Header

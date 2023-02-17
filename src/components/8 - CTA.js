@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-export default () => {
+const Cta = () => {
   return (
     <div class="section l4 light-blue wf-section">
       <div class="container l4 cta">
@@ -88,3 +88,5 @@ export default () => {
     </div>
   )
 }
+
+export default Cta

@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-export default () => {
+const Features = () => {
   return (
     <div id="Features" class="section l4 wf-section">
       <div class="container">
@@ -19,7 +19,7 @@ export default () => {
           >
             <div class="features-row">
               <img
-                src="/images/60edcb50736dc4ddeb5f8405_REady.svg"
+                src="/images/Ready.svg"
                 loading="lazy"
                 alt=""
                 class="feature-icon"
@@ -39,7 +39,7 @@ export default () => {
             </div>
             <div class="check-row">
               <img
-                src="/images/60edccda08e9c19bd095433d_Done.svg"
+                src="/images/Done.svg"
                 loading="lazy"
                 alt=""
                 class="feature-check"
@@ -48,7 +48,7 @@ export default () => {
             </div>
             <div class="check-row">
               <img
-                src="/images/60edccda08e9c19bd095433d_Done.svg"
+                src="/images/Done.svg"
                 loading="lazy"
                 alt=""
                 class="feature-check"
@@ -57,7 +57,7 @@ export default () => {
             </div>
             <div class="check-row">
               <img
-                src="/images/60edccda08e9c19bd095433d_Done.svg"
+                src="/images/Done.svg"
                 loading="lazy"
                 alt=""
                 class="feature-check"
@@ -66,7 +66,7 @@ export default () => {
             </div>
             <div class="check-row">
               <img
-                src="/images/60edccda08e9c19bd095433d_Done.svg"
+                src="/images/Done.svg"
                 loading="lazy"
                 alt=""
                 class="feature-check"
@@ -75,7 +75,7 @@ export default () => {
             </div>
             <div class="check-row">
               <img
-                src="/images/60edccda08e9c19bd095433d_Done.svg"
+                src="/images/Done.svg"
                 loading="lazy"
                 alt=""
                 class="feature-check"
@@ -86,7 +86,7 @@ export default () => {
           <div class="features-card">
             <div class="features-row">
               <img
-                src="/images/60edc94e4488e672d9485c36_Custom.svg"
+                src="/images/Custom.svg"
                 loading="lazy"
                 alt=""
                 class="feature-icon"
@@ -101,7 +101,7 @@ export default () => {
           <div class="features-card">
             <div class="features-row">
               <img
-                src="/images/60edc82575708a942583cfe4_Fast.svg"
+                src="/images/Fast.svg"
                 loading="lazy"
                 alt=""
                 class="feature-icon"
@@ -116,7 +116,7 @@ export default () => {
           <div class="features-card">
             <div class="features-row">
               <img
-                src="/images/60edca6fb9c1ebd42b84fa4b_Design.svg"
+                src="/images/Design.svg"
                 loading="lazy"
                 alt=""
                 class="feature-icon"
@@ -131,7 +131,7 @@ export default () => {
           <div class="features-card">
             <div class="features-row">
               <img
-                src="/images/60edc7a1dfdd478819ff8309_Integrations.svg"
+                src="/images/Integrations.svg"
                 loading="lazy"
                 alt=""
                 class="feature-icon"
@@ -146,7 +146,7 @@ export default () => {
           <div class="features-card">
             <div class="features-row">
               <img
-                src="/images/60edcb9cc45c397107a35748_Secutiry.svg"
+                src="/images/Security.svg"
                 loading="lazy"
                 alt=""
                 class="feature-icon"
@@ -162,7 +162,7 @@ export default () => {
           <div class="features-card">
             <div class="features-row">
               <img
-                src="/images/60edcc1321ae12f4ee5e8900_Running.svg"
+                src="/images/Running.svg"
                 loading="lazy"
                 alt=""
                 class="feature-icon"
@@ -177,7 +177,7 @@ export default () => {
           <div class="features-card">
             <div class="features-row">
               <img
-                src="/images/60edc8b0428a0099d7351056_Blog.svg"
+                src="/images/Blog.svg"
                 loading="lazy"
                 alt=""
                 class="feature-icon"
@@ -194,3 +194,5 @@ export default () => {
     </div>
   )
 }
+
+export default Features

@@ -1,7 +1,5 @@
 const _ = require('lodash')
 const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -16,9 +14,9 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
+      result.errors.forEach((e) => console.error(e.toString()))
       return Promise.reject(result.errors)
     }
 
@@ -35,34 +33,11 @@ exports.createPages = ({ actions, graphql }) => {
       //   id
       // }
     })
-
-    _.each(contentTypes, (pages, contentType) => {
-      const pagesToCreate = pages
-      if (!pagesToCreate.length) return console.log(`Skipping ${contentType}`)
-
-      console.log(`Creating ${pagesToCreate.length} ${contentType}`)
-
-      pagesToCreate.forEach((page, index) => {
-        const id = page.node.id
-        createPage({
-          // page slug set in md frontmatter
-          path: '/',
-          component: path.resolve(`src/templates/HomePage.js`),
-          // additional data can be passed via context
-          context: {
-            id
-          }
-        })
-      })
-    })
   })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-
-  // convert frontmatter images
-  fmImagesToRelative(node)
 
   // Create smart slugs
   // https://github.com/Vagr9K/gatsby-advanced-starter/blob/master/gatsby-node.js

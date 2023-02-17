@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-export default () => {
+const How = () => {
   return (
     <div>
       <div id="How" class="section l4 wf-section">
@@ -93,3 +93,5 @@ export default () => {
     </div>
   )
 }
+
+export default How

@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-export default () => {
+const Clients = () => {
   return (
     <div id="Clients" class="section l4 wf-section">
       <div class="container align-left">
@@ -11,33 +11,14 @@ export default () => {
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatib.
           </p>
         </div>
-        <div
-          data-delay="4000"
-          data-animation="slide"
-          class="testimonial-slider w-slider"
-          data-autoplay="false"
-          data-easing="ease"
-          data-hide-arrows="false"
-          data-disable-swipe="false"
-          data-autoplay-limit="0"
-          data-nav-spacing="3"
-          data-duration="600"
-          data-infinite="true"
-          role="region"
-          aria-label="carousel"
-        >
+        <div class="testimonial-slider w-slider">
           <div class="w-slider-mask" id="w-slider-mask-0">
-            <div
-              class="slide w-slide"
-              aria-label="1 of 3"
-              role="group"
-              // style="transform: translateX(0px); opacity: 1"
-            >
+            <div class="slide w-slide" role="group">
               <div class="slide-blue-bkg"></div>
               <div class="slide-grid">
                 <div class="slide-column-left">
                   <img
-                    src="/images/60eb09a30b0e1a9e57a1278f_Logoipsum_1.svg"
+                    src="/images/Logoipsum_1.svg"
                     loading="lazy"
                     alt=""
                     class="l4-logo"
@@ -63,55 +44,11 @@ export default () => {
                 </div>
               </div>
             </div>
-            <div
-              class="slide w-slide"
-              aria-label="2 of 3"
-              role="group"
-              aria-hidden="true"
-              // style="transform: translateX(0px); opacity: 1"
-            >
-              <div class="slide-blue-bkg" aria-hidden="true"></div>
-              <div class="slide-grid" aria-hidden="true">
-                <div class="slide-column-left" aria-hidden="true">
-                  <img
-                    src="/images/60eac105ee5004003b5f3555_logoipsum-logo-5.svg"
-                    loading="lazy"
-                    alt=""
-                    class="l4-logo"
-                    aria-hidden="true"
-                  />
-                  <div class="l4-quote" aria-hidden="true">
-                    “With real-time integrated data flows from Segment, we can
-                    truly understand what people are doing with our platform at
-                    any given time.“
-                  </div>
-                  <div class="l4-name" aria-hidden="true">
-                    Anne Marise
-                  </div>
-                  <div class="l4-info" aria-hidden="true">
-                    Lead Designer
-                  </div>
-                </div>
-                <div class="slide-column-right" aria-hidden="true">
-                  <div class="slider-percentage" aria-hidden="true">
-                    77%
-                  </div>
-                  <div class="percentage-subtitle" aria-hidden="true">
-                    Increase in conversion rate since they started using Landing
-                    Page Ace, our great software for you.
-                  </div>
-                  <div class="percentage-small-text" aria-hidden="true">
-                    Client since October 2018
-                  </div>
-                  <div class="plan-info" aria-hidden="true">
-                    Using The Premium Plan
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   )
 }
+
+export default Clients

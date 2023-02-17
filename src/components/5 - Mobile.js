@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-export default () => {
+const Mobile = () => {
   return (
     <div class="section l4 light-blue wf-section">
       <div class="container">
@@ -19,3 +19,5 @@ export default () => {
     </div>
   )
 }
+
+export default Mobile

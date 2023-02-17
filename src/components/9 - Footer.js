@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-export default () => {
+const Footer = () => {
   return (
     <div class="footer l4 wf-section">
       <div class="container">
@@ -19,32 +19,26 @@ export default () => {
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
+                rel="noreferrer"
                 class="social-link w-inline-block"
               >
-                <img
-                  src="/images/60ec77a5ffbfbd5a0f58eb0c_Fb_White.svg"
-                  alt=""
-                />
+                <img src="/images/facebook.svg" alt="" />
               </a>
               <a
                 href="https://twitter.com/"
                 target="_blank"
+                rel="noreferrer"
                 class="social-link w-inline-block"
               >
-                <img
-                  src="/images/60ec77a500a5279829e7b3af_Tw_White.svg"
-                  alt=""
-                />
+                <img src="/images/twitter.svg" alt="" />
               </a>
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
+                rel="noreferrer"
                 class="social-link w-inline-block"
               >
-                <img
-                  src="/images/60ec77a5f4e079d32777a9f1_In_White.svg"
-                  alt=""
-                />
+                <img src="/images/instagram.svg" alt="" />
               </a>
             </div>
           </div>
@@ -53,3 +47,5 @@ export default () => {
     </div>
   )
 }
+
+export default Footer
