@@ -28,10 +28,6 @@ exports.createPages = ({ actions, graphql }) => {
       path: '/',
       component: path.resolve(`src/pages/LandingPage.js`)
     })
-    createPage({
-      path: '/success',
-      component: path.resolve(`src/pages/success.js`)
-    })
   })
 }
 
