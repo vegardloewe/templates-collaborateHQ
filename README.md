@@ -11,17 +11,19 @@
 
 Kick off your project with this template. This template ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
+**LIVE DEMO:** https://pageitup-chq.netlify.app/
+
 ## 🚀 Quick start
 
-1. 💫 Deploy
+1. 💫 **Deploy**
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vegardloewe/templates-collaborateHQ)
+    [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vegardloewe/templates-collaborateHQ)
 
-Instantly build and deploy your sites to our global network from Git. Custom domains, https, deploy previews, rollbacks and much more.
+    Instantly build and deploy your sites to our global network from Git. Custom domains, https, deploy previews, rollbacks and much more.
 
 2.  **Navigate to your new repository.**
 
-   Navigate into your new site’s repository and access it locally.
+    Navigate into your new site’s repository and access it locally.
 
 3.  **Start developing.**
 
