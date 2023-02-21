@@ -42,13 +42,11 @@ Kick off your project with this template. This template ships with the main Gats
 
     Open the `my-website` directory in your code editor of choice and edit components listed in `src/pages/Landingpage.js`. Save your changes and the browser will update in real time!
 
----
 
 ## Issues?
 
 If you find any bugs or have feature suggestions, please contact me 🙏
 
----
 
 <!-- <a href="https://www.buymeacoffee.com/kmuenster" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
